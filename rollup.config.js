@@ -12,6 +12,7 @@ const packageJson = require('./package.json')
 export default [
   {
     input: 'src/index.ts',
+    "declarationDir": "types",
     output: [
       {
         file: packageJson.main,

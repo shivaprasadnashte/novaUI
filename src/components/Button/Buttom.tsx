@@ -1,15 +1,13 @@
-import React, {ReactNode} from 'react'
+import React, { FC, ReactNode } from "react"
 
-interface ButtomProps {
+interface Props{
     children: ReactNode | ReactNode[]
-    }
+}
 
-function Buttom({ children}) {
+const Button:FC<Props> = ({children}) => {
   return (
-    <button>
-      {children}
-    </button>
+    <button className=" bg-yellow-300 text-2xl" >{children}</button>
   )
 }
 
-export default Buttom
+export default Button
